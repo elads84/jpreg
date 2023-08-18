@@ -68,5 +68,5 @@ def registration(type_of_guest):
     return render_template('registration.html', type_of_guest=type_of_guest)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
