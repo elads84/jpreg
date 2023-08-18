@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-sm" align="center">
+
+    <form method="post" action="">
+        <div class="mb-3">
+            <h3>יש למלא פרטים אישיים. כל השדות חובה</h3>
+            <label for="exampleFormControlInput1" class="form-label">שם פרטי</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="יש למלא שם פרטי"
+                   required name="first_name">
+        </div>
+        <div class="mb-3 align-items-center">
+            <label for="exampleFormControlInput2" class="form-label">שם משפחה</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="יש למלא שם משפחה"
+                   required name="last_name">
+        </div>
+        <div class="mb-3 align-items-center">
+            <label for="exampleFormControlInput3" class="form-label">מספר טלפון נייד</label>
+            <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="יש למלא מספר טלפון נייד"
+                   required name="phone_number">
+        </div>
+        <h3>נא לבחור מפגש בוקר או ערב</h3>
+
+        <select class="form-select" aria-label="Default select example" name="morning_or_evening">
+            <option value="morning">מפגש בוקר</option>
+            <option value="evening">מפגש ערב</option>
+
+        </select>
+        {% if type_of_guest == 'guest' %}
+        <h3>מי הזמין אותך למפגש</h3>
+        <input class="form-control" type="text" placeholder="יש למלא מי הזמין אותך למפגש"
+               aria-label="default input example"
+               required name="invited_by">
+        {% endif %}
+
+        <input type="submit" class="btn btn-primary btn-lg" value="שליחה">
+    </form>
+</div>
+{% endblock %}

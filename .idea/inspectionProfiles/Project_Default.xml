@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="PySide6.QtWidgets.QMessageBox.Yes" />
+          <option value="PySide6.QtWidgets.QMessageBox.No" />
+          <option value="PySide6.QtCore.Qt.*" />
+          <option value="PySide6.QtWidgets.QTableView.*" />
+          <option value="PySide6.QtWidgets.QAbstractItemView.*" />
+          <option value="vlc.EventType.*" />
+          <option value="PySide6.QtSql.QSqlTableModel.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
